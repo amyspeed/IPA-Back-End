@@ -1,12 +1,27 @@
 {
   "name": "back-end",
   "version": "1.0.0",
-  "description": "",
   "main": "config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amyspeed/IPA-Back-End.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amyspeed/IPA-Back-End/issues"
+  },
+  "homepage": "https://github.com/amyspeed/IPA-Back-End#readme",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
 }
