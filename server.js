@@ -1,13 +1,14 @@
 'use strict';
 
-//require('dotenv').config();
+require('dotenv').config();
 
 const express = require('express');
 const mongoose = require('mongoose');
+const morgan = require('morgan');
 const passport = require('passport');
 
-// const { router: usersRouter } = require('./users');
-// const { router: authRouter, localStrategy, jwtStrategy } = require('./auth');
+const { router: usersRouter } = require('./users');
+const { router: authRouter, localStrategy, jwtStrategy } = require('./auth');
 const { router: quizRouter } = require('./quizzes');
 
 mongoose.Promise = global.Promise;
@@ -16,30 +17,31 @@ const { DATABASE_URL, PORT } = require('./config');
 
 const app = express();
 
+app.use(morgan('common'));
 app.use(express.json());
 
-// app.use(function (req, res, next) {
-//     res.header('Access-Control-Allow-Origin', '*');
-//     res.header('Access-Control-Allow-Headers', 'Content-Type,Authorization');
-//     res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE');
-//     if (req.method === 'OPTIONS') {
-//         return res.sendStatus(204);
-//     }
-//     next();
-// });
+app.use(function (req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Content-Type,Authorization');
+    res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE');
+    if (req.method === 'OPTIONS') {
+        return res.sendStatus(204);
+    }
+    next();
+});
 
-// passport.use(localStrategy);
-// passport.use(jwtStrategy);
+passport.use(localStrategy);
+passport.use(jwtStrategy);
 
-// app.use('api/users/', usersRouter);
-// app.use('api/auth', authRouter);
+app.use('/users/', usersRouter);
+app.use('/auth/', authRouter);
 app.use('/quizzes', quizRouter);
-
-const jwtAuth = passport.authenticate('jwt', { session: false });
 
 app.use('*', function (req, res) {
     res.status(404).json({ message: `Not Found` });
 });
+
+
 
 let server;
 
