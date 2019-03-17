@@ -3,9 +3,12 @@
 const express = require('express');
 const { Quiz } = require('./models');
 const router = express.Router();
+const passport = require('passport');
+
+const jwtAuth = passport.authenticate('jwt', { session: false });
 
 //Get all
-router.get('/', (req, res) => {
+router.get('/', jwtAuth, (req, res) => {
     Quiz
         .find()
         .then(quizzes => res.json(quizzes))
@@ -16,7 +19,7 @@ router.get('/', (req, res) => {
 });
 
 //Get by Id
-router.get('/:id', (req, res) => {
+router.get('/:id', jwtAuth, (req, res) => {
     Quiz
     .findById(req.params.id)
     .then(quiz => res.json(quiz))
