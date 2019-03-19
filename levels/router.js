@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const { Quiz } = require('./models');
+const { Level } = require('./models');
 const router = express.Router();
 const passport = require('passport');
 
@@ -9,9 +9,9 @@ const jwtAuth = passport.authenticate('jwt', { session: false });
 
 //Get all
 router.get('/', jwtAuth, (req, res) => {
-    Quiz
+    Level
         .find()
-        .then(quizzes => res.json(quizzes))
+        .then(levels => res.json(levels))
         .catch(err => {
             console.error(err);
             res.status(500).json({ error: 'Oops! Something went wrong' });
@@ -20,9 +20,9 @@ router.get('/', jwtAuth, (req, res) => {
 
 //Get by Id
 router.get('/:id', jwtAuth, (req, res) => {
-    Quiz
+    Level
     .findById(req.params.id)
-    .then(quiz => res.json(quiz))
+    .then(level => res.json(level))
     .catch(err => {
         console.error(err);
         res.status(500).json({ error: 'somthing went wrong' });

@@ -9,7 +9,7 @@ const passport = require('passport');
 
 const { router: usersRouter } = require('./users');
 const { router: authRouter, localStrategy, jwtStrategy } = require('./auth');
-const { router: quizRouter } = require('./quizzes');
+const { router: levelRouter } = require('./levels');
 
 mongoose.Promise = global.Promise;
 
@@ -35,7 +35,7 @@ passport.use(jwtStrategy);
 
 app.use('/api/users', usersRouter);
 app.use('/api/auth', authRouter);
-app.use('/api/quizzes', quizRouter);
+app.use('/api/levels', levelRouter);
 
 app.use('*', function (req, res) {
     res.status(404).json({ message: `Not Found` });

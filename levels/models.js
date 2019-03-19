@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-const QuizSchema = mongoose.Schema({
+const LevelSchema = mongoose.Schema({
     quizName: String,
     question1: String,
     answer1: String,
@@ -27,6 +27,6 @@ const QuizSchema = mongoose.Schema({
     answer10: String
 });
 
-const Quiz = mongoose.model('Quiz', QuizSchema)
+const Level = mongoose.model('Level', LevelSchema)
 
-module.exports = { Quiz };
+module.exports = { Level };
