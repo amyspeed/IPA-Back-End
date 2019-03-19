@@ -33,9 +33,9 @@ app.use(function (req, res, next) {
 passport.use(localStrategy);
 passport.use(jwtStrategy);
 
-app.use('/users/', usersRouter);
-app.use('/auth/', authRouter);
-app.use('/quizzes', quizRouter);
+app.use('/api/users', usersRouter);
+app.use('/api/auth', authRouter);
+app.use('/api/quizzes', quizRouter);
 
 app.use('*', function (req, res) {
     res.status(404).json({ message: `Not Found` });
