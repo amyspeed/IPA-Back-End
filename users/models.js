@@ -28,9 +28,9 @@ UserSchema.methods.serialize = function() {
     id: this._id,
     username: this.username || '',
     firstName: this.firstName || '',
-    level1: this.quiz1 || 0,
-    level2: this.quiz2 || 0,
-    level3: this.quiz3 || 0,
+    level1: this.level1 || 0,
+    level2: this.level2 || 0,
+    level3: this.level3 || 0,
     totalScore: this.totalScore || 0
   };
 };
