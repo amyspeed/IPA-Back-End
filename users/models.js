@@ -17,9 +17,9 @@ const UserSchema = mongoose.Schema({
   },
   firstName: { type: String, default: '' },
   lastName: { type: String, default: '' },
-  quiz1: { type: Number, default: 0 },
-  quiz2: { type: Number, default: 0 },
-  quiz3: { type: Number, default: 0 },
+  level1: { type: Number, default: 0 },
+  level2: { type: Number, default: 0 },
+  level3: { type: Number, default: 0 },
   totalScore: { type: Number, default: 0 }
 });
 
@@ -28,9 +28,9 @@ UserSchema.methods.serialize = function() {
     id: this._id,
     username: this.username || '',
     firstName: this.firstName || '',
-    quiz1: this.quiz1 || 0,
-    quiz2: this.quiz2 || 0,
-    quiz3: this.quiz3 || 0,
+    level1: this.quiz1 || 0,
+    level2: this.quiz2 || 0,
+    level3: this.quiz3 || 0,
     totalScore: this.totalScore || 0
   };
 };

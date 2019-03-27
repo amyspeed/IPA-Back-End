@@ -1,5 +1,5 @@
 {
-    "quizName": "1",
+    "level": "1",
     "question1": "[example1]",
     "answer1": "example1",
     "question2": "[example2]",
@@ -22,7 +22,7 @@
     "answer10": "example10"
 }
 {
-    "quizName": "2",
+    "level": "2",
     "question1": "[example1]",
     "answer1": "example1",
     "question2": "[example2]",
@@ -45,7 +45,7 @@
     "answer10": "example10"
 }
 {
-    "quizName": "3",
+    "level": "3",
     "question1": "[example1]",
     "answer1": "example1",
     "question2": "[example2]",
