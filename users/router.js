@@ -154,7 +154,7 @@ router.get('/scores/:id', jwtAuth, (req, res) => {
 
 router.put('/scores/:id', jwtAuth, (req, res) => {
     const updated = {};
-    const updateableFields = [ 'quiz1', 'quiz2', 'quiz3', 'totalScore' ];
+    const updateableFields = [ 'level1', 'level2', 'level3', 'totalScore' ];
     updateableFields.forEach(field => {
         if (field in req.body) {
             updated[field] = req.body[field];
