@@ -142,16 +142,6 @@ router.get('/scores', jwtAuth, (req, res) => {
         });
 });
 
-router.get('/scores/:id', jwtAuth, (req, res) => {
-    return User
-        .findById(req.params.id)
-        .then(user => res.json(user.serialize()))
-        .catch(err => {
-            console.error(err)
-            res.status(500).json({message: 'Oops! Something went wrong'})
-        });
-});
-
 router.put('/scores/:id', jwtAuth, (req, res) => {
     const updated = {};
     const updateableFields = [ 'level1', 'level2', 'level3', 'totalScore' ];
