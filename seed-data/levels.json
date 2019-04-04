@@ -1,69 +1,63 @@
 {
     "level": "1",
-    "question1": "[example1]",
-    "answer1": "example1",
-    "question2": "[example2]",
-    "answer2": "example2",
-    "question3": "[example3]",
-    "answer3": "example3",
-    "question4": "[example4]",
-    "answer4": "example4",
-    "question5": "[example5]",
-    "answer5": "example5",
-    "question6": "[example6]",
-    "answer6": "example6",
-    "question7": "[example7]",
-    "answer7": "example7",
-    "question8": "[example8]",
-    "answer8": "example8",
-    "question9": "[example9]",
-    "answer9": "example9",
-    "question10": "[example10]",
-    "answer10": "example10"
+    "instructions": "Congratulations on your new learning endevour! Here are a few pointers to help you on your journey. First, it is important to recognize that IPA symbols are always presented in brackets. Read the bracketed symbols out loud, keeping the English language in mind. Next, try to guess the English transcription. Write your answer in the provided box and submit. Once you have feedback on your answer, begin to deconstruct the sounds and commit them to memory before moving on. You will be surprised at how quickly you will learn IPA in this immersive way. Be sure to finish the entire level to log your earned points for a chance to compete for a winning place on the leaderboards!",
+    "questions": [
+        {
+            "questionNum": 1,
+            "question": "[example1]",
+            "answer": "example1"
+        },
+        {
+            "questionNum": 2,
+            "question": "[example2]",
+            "answer": "example2"
+        },
+        {
+            "questionNum": 3,
+            "question": "[example3]",
+            "answer": "example3"
+        }
+    ]
 }
 {
     "level": "2",
-    "question1": "[example1]",
-    "answer1": "example1",
-    "question2": "[example2]",
-    "answer2": "example2",
-    "question3": "[example3]",
-    "answer3": "example3",
-    "question4": "[example4]",
-    "answer4": "example4",
-    "question5": "[example5]",
-    "answer5": "example5",
-    "question6": "[example6]",
-    "answer6": "example6",
-    "question7": "[example7]",
-    "answer7": "example7",
-    "question8": "[example8]",
-    "answer8": "example8",
-    "question9": "[example9]",
-    "answer9": "example9",
-    "question10": "[example10]",
-    "answer10": "example10"
+    "instructions": "Congratulations! You completed level 1! Follow the same winning process for Level 2. First, it is important to recognize that IPA symbols are always presented in brackets. Read the bracketed symbols out loud, keeping the English language in mind. Next, try to guess the English transcription. Write your answer in the provided box and submit. Once you have feedback on your answer, begin to deconstruct the sounds and commit them to memory before moving on. You will be surprised at how quickly you will learn IPA in this immersive way. Be sure to finish the entire level to log your earned points for a chance to compete for a winning place on the leaderboards!",
+    "questions": [
+        {
+            "questionNum": 1,
+            "question": "[example1]",
+            "answer": "example1"
+        },
+        {
+            "questionNum": 2,
+            "question": "[example2]",
+            "answer": "example2"
+        },
+        {
+            "questionNum": 3,
+            "question": "[example3]",
+            "answer": "example3"
+        }
+    ]
 }
 {
     "level": "3",
-    "question1": "[example1]",
-    "answer1": "example1",
-    "question2": "[example2]",
-    "answer2": "example2",
-    "question3": "[example3]",
-    "answer3": "example3",
-    "question4": "[example4]",
-    "answer4": "example4",
-    "question5": "[example5]",
-    "answer5": "example5",
-    "question6": "[example6]",
-    "answer6": "example6",
-    "question7": "[example7]",
-    "answer7": "example7",
-    "question8": "[example8]",
-    "answer8": "example8",
-    "question9": "[example9]",
-    "answer9": "example9",
-    "question10": "[example10]",
-    "answer10": "example10"
+    "instructions": "Congratulations! You completed level 3! Follow the same winning process for Level 2. First, it is important to recognize that IPA symbols are always presented in brackets. Read the bracketed symbols out loud, keeping the English language in mind. Next, try to guess the English transcription. Write your answer in the provided box and submit. Once you have feedback on your answer, begin to deconstruct the sounds and commit them to memory before moving on. You will be surprised at how quickly you will learn IPA in this immersive way. Be sure to finish the entire level to log your earned points for a chance to compete for a winning place on the leaderboards!",
+    "questions": [
+        {
+            "questionNum": 1,
+            "question": "[example1]",
+            "answer": "example1"
+        },
+        {
+            "questionNum": 2,
+            "question": "[example2]",
+            "answer": "example2"
+        },
+        {
+            "questionNum": 3,
+            "question": "[example3]",
+            "answer": "example3"
+        }
+    ]
 }
