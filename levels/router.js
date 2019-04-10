@@ -25,7 +25,7 @@ router.get('/:id', jwtAuth, (req, res) => {
     .then(level => res.json(level))
     .catch(err => {
         console.error(err);
-        res.status(500).json({ error: 'somthing went wrong' });
+        res.status(500).json({ error: 'something went wrong' });
     });
 });
 
