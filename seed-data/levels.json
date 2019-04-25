@@ -1,63 +1,518 @@
 {
     "level": "level1",
-    "instructions": "Congratulations on your new learning endevour! Here are a few pointers to help you on your journey. First, it is important to recognize that IPA symbols are always presented in brackets. Read the bracketed symbols out loud, keeping the English language in mind. Next, try to guess the English transcription. Write your answer in the provided box and submit. Once you have feedback on your answer, begin to deconstruct the sounds and commit them to memory before moving on. You will be surprised at how quickly you will learn IPA in this immersive way. Be sure to finish the entire level to log your earned points for a chance to compete for a winning place on the leaderboards!",
+    "instructions": "Congratulations on your new learning endeavor! Here are a few pointers to help you on your journey. First, it is important to recognize that IPA symbols are always presented in brackets. Secondly, each symbol in brackets represents an exact sound. Your job is to learn those sounds. Read the bracketed symbols out loud, keeping the English language in mind. Next, try to guess the English transcription. Type your answer and submit. Once you have feedback on your answer, begin to deconstruct the sounds and commit them to memory before moving on. You will be surprised at how quickly you will learn IPA in this immersive way. Be sure to finish the entire level to log your earned points for a competitive place on the leaderboards!",
     "questions": [
         {
             "questionNum": 1,
-            "question": "[example1]",
-            "answer": "example1"
+            "question": "[kæt]",
+            "answer": "cat"
         },
         {
             "questionNum": 2,
-            "question": "[example2]",
-            "answer": "example2"
+            "question": "[hæt]",
+            "answer": "hat"
         },
         {
             "questionNum": 3,
-            "question": "[example3]",
-            "answer": "example3"
+            "question": "[hit]",
+            "answer": "heat"
+        },
+        {
+            "questionNum": 4,
+            "question": "[sɪt]",
+            "answer": "sit"
+        },        
+        {
+            "questionNum": 5,
+            "question": "[sɪŋ]",
+            "answer": "sing"
+        },
+        {
+            "questionNum": 6,
+            "question": "[klɪŋ]",
+            "answer": "cling"
+        },
+        {
+            "questionNum": 7,
+            "question": "[fid]",
+            "answer": "feed"
+        },
+        {
+            "questionNum": 8,
+            "question": "[wɪn]",
+            "answer": "win"
+        },
+        {
+            "questionNum": 9,
+            "question": "[kiz]",
+            "answer": "keys"
+        },
+        {
+            "questionNum": 10,
+            "question": "[heɪl]",
+            "answer": "hail"
+        },
+        {
+            "questionNum": 11,
+            "question": "[feɪs]",
+            "answer": "face"
+        },
+        {
+            "questionNum": 12,
+            "question": "[weɪk]",
+            "answer": "wake"
+        },
+        {
+            "questionNum": 13,
+            "question": "[ɛlf]",
+            "answer": "elf"
+        },
+        {
+            "questionNum": 14,
+            "question": "[bæd]",
+            "answer": "bad"
+        },
+        {
+            "questionNum": 15,
+            "question": "[strit]",
+            "answer": "street"
+        },
+        {
+            "questionNum": 16,
+            "question": "[stɛp]",
+            "answer": "step"
+        },
+        {
+            "questionNum": 17,
+            "question": "[mil]",
+            "answer": "meal"
+        },
+        {
+            "questionNum": 18,
+            "question": "[gis]",
+            "answer": "geese"
+        },
+        {
+            "questionNum": 19,
+            "question": "[geɪm]",
+            "answer": "game"
+        },
+        {
+            "questionNum": 20,
+            "question": "[dɛk]",
+            "answer": "deck"
+        },
+        {
+            "questionNum": 21,
+            "question": "[pɪn]",
+            "answer": "pin"
+        },
+        {
+            "questionNum": 22,
+            "question": "[blæst]",
+            "answer": "blast"
+        },
+        {
+            "questionNum": 23,
+            "question": "[dreɪn]",
+            "answer": "drain"
+        },
+        {
+            "questionNum": 24,
+            "question": "[hæk]",
+            "answer": "hack"
+        },
+        {
+            "questionNum": 25,
+            "question": "[greɪt]",
+            "answer": "great"
         }
     ]
 }
 {
     "level": "level2",
-    "instructions": "Congratulations! You completed level 1! Follow the same winning process for Level 2. First, it is important to recognize that IPA symbols are always presented in brackets. Read the bracketed symbols out loud, keeping the English language in mind. Next, try to guess the English transcription. Write your answer in the provided box and submit. Once you have feedback on your answer, begin to deconstruct the sounds and commit them to memory before moving on. You will be surprised at how quickly you will learn IPA in this immersive way. Be sure to finish the entire level to log your earned points for a chance to compete for a winning place on the leaderboards!",
+    "instructions": "Congratulations! You completed level 1! Follow the same winning process for Level 2. Be sure to finish the entire level to log your earned points for a competitive place on the leaderboards!",
     "questions": [
         {
             "questionNum": 1,
-            "question": "[example1]",
-            "answer": "example1"
+            "question": "[pul]",
+            "answer": "pool"
         },
         {
             "questionNum": 2,
-            "question": "[example2]",
-            "answer": "example2"
+            "question": "[ʃu]",
+            "answer": "shoe"
         },
         {
             "questionNum": 3,
-            "question": "[example3]",
-            "answer": "example3"
+            "question": "[pʊl]",
+            "answer": "pull"
+        },
+        {
+            "questionNum": 4,
+            "question": "[ʃoʊ]",
+            "answer": "show"
+        },
+        {
+            "questionNum": 5,
+            "question": "[bʊk]",
+            "answer": "book"
+        },
+        {
+            "questionNum": 6,
+            "question": "[trʌk]",
+            "answer": "truck"
+        },
+        {
+            "questionNum": 7,
+            "question": "[rud]",
+            "answer": "rude"
+        },        
+        {
+            "questionNum": 8,
+            "question": "[lʊk]",
+            "answer": "look"
+        },
+        {
+            "questionNum": 9,
+            "question": "[ˈstʌn.ɪŋ]",
+            "answer": "stunning"
+        },
+        {
+            "questionNum": 10,
+            "question": "[sun]",
+            "answer": "soon"
+        },
+        {
+            "questionNum": 11,
+            "question": "[kroʊ]",
+            "answer": "crow"
+        },
+        {
+            "questionNum": 12,
+            "question": "[brɛθ]",
+            "answer": "breath"
+        },
+        {
+            "questionNum": 13,
+            "question": "[θroʊ]",
+            "answer": "throw"
+        },
+        {
+            "questionNum": 14,
+            "question": "[goʊt]",
+            "answer": "goat"
+        },
+        {
+            "questionNum": 15,
+            "question": "[fɑnd]",
+            "answer": "fond"
+        },
+        {
+            "questionNum": 16,
+            "question": "[tɔt]",
+            "answer": "taught"
+        },
+        {
+            "questionNum": 17,
+            "question": "[ˈɑl.ɪv]",
+            "answer": "olive"
+        },
+        {
+            "questionNum": 18,
+            "question": "[kɔf]",
+            "answer": "cough"
+        },
+        {
+            "questionNum": 19,
+            "question": "[ðoʊ]",
+            "answer": "though"
+        },
+        {
+            "questionNum": 20,
+            "question": "[ðɪs]",
+            "answer": "this"
+        },
+        {
+            "questionNum": 21,
+            "question": "[koʊd]",
+            "answer": "code"
+        },
+        {
+            "questionNum": 22,
+            "question": "[kɑr]",
+            "answer": "car"
+        },
+        {
+            "questionNum": 23,
+            "question": "[frʌm]",
+            "answer": "from"
+        },
+        {
+            "questionNum": 24,
+            "question": "[bɑks]",
+            "answer": "box"
+        },
+        {
+            "questionNum": 25,
+            "question": "[groʊv]",
+            "answer": "grove"
+        },
+        {
+            "questionNum": 26,
+            "question": "[muv]",
+            "answer": "move"
+        },
+        {
+            "questionNum": 27,
+            "question": "[ʃʊk]",
+            "answer": "shook"
+        },
+        {
+            "questionNum": 28,
+            "question": "[rum]",
+            "answer": "room"
+        },
+        {
+            "questionNum": 29,
+            "question": "[stim]",
+            "answer": "steam"
+        },
+        {
+            "questionNum": 30,
+            "question": "[tʃiz]",
+            "answer": "cheese"
+        },
+        {
+            "questionNum": 31,
+            "question": "[lʌv]",
+            "answer": "love"
+        },
+        {
+            "questionNum": 32,
+            "question": "[lɔ]",
+            "answer": "law"
+        },
+        {
+            "questionNum": 33,
+            "question": "[dʒus]",
+            "answer": "juice"
+        },
+        {
+            "questionNum": 34,
+            "question": "[ritʃ]",
+            "answer": "reach"
+        },
+        {
+            "questionNum": 35,
+            "question": "[dʒɑb]",
+            "answer": "job"
         }
     ]
 }
 {
     "level": "level3",
-    "instructions": "Congratulations! You completed level 3! Follow the same winning process for Level 2. First, it is important to recognize that IPA symbols are always presented in brackets. Read the bracketed symbols out loud, keeping the English language in mind. Next, try to guess the English transcription. Write your answer in the provided box and submit. Once you have feedback on your answer, begin to deconstruct the sounds and commit them to memory before moving on. You will be surprised at how quickly you will learn IPA in this immersive way. Be sure to finish the entire level to log your earned points for a chance to compete for a winning place on the leaderboards!",
+    "instructions": "Congratulations! You completed level 2! Follow the same winning process for Level 3. Be sure to finish the entire level to log your earned points for a competitive place on the leaderboards!",
     "questions": [
         {
             "questionNum": 1,
-            "question": "[example1]",
-            "answer": "example1"
+            "question": "[ˈæ.pəl]",
+            "answer": "apple"
         },
         {
             "questionNum": 2,
-            "question": "[example2]",
-            "answer": "example2"
+            "question": "[pəˈlis]",
+            "answer": "police"
         },
         {
             "questionNum": 3,
-            "question": "[example3]",
-            "answer": "example3"
+            "question": "[dʒɔɪ]",
+            "answer": "joy"
+        },
+        {
+            "questionNum": 4,
+            "question": "[ˈmju.zɪk]",
+            "answer": "music"
+        },
+        {
+            "questionNum": 5,
+            "question": "[əˈvɔɪd]",
+            "answer": "avoid"
+        },
+        {
+            "questionNum": 6,
+            "question": "[əˈpil]",
+            "answer": "appeal"
+        },
+        {
+            "questionNum": 7,
+            "question": "[əˈmjuz]",
+            "answer": "amuse"
+        },
+        {
+            "questionNum": 8,
+            "question": "[bɛg]",
+            "answer": "beg"
+        },
+        {
+            "questionNum": 9,
+            "question": "[ˈeɪ.prəl]",
+            "answer": "April"
+        },
+        {
+            "questionNum": 10,
+            "question": "[ˈbeɪʒ]",
+            "answer": "beige"
+        },
+        {
+            "questionNum": 11,
+            "question": "[ˈtrʌ.bəl]",
+            "answer": "trouble"
+        },        
+        {
+            "questionNum": 12,
+            "question": "[ɛmˈplɔɪ]",
+            "answer": "employ"
+        },
+        {
+            "questionNum": 13,
+            "question": "[skaɪ]",
+            "answer": "sky"
+        },
+        {
+            "questionNum": 14,
+            "question": "[saʊnd]",
+            "answer": "sound"
+        },
+        {
+            "questionNum": 15,
+            "question": "[kloʊn]",
+            "answer": "clone"
+        },
+        {
+            "questionNum": 16,
+            "question": "[ˈraʊ.dɪ]",
+            "answer": "rowdy"
+        },
+        {
+            "questionNum": 17,
+            "question": "[ˈbɔɪ.lɪŋ]",
+            "answer": "boiling"
+        },
+        {
+            "questionNum": 18,
+            "question": "[flaɪt]",
+            "answer": "flight"
+        },
+        {
+            "questionNum": 19,
+            "question": "[ˈhɑ.kɪ]",
+            "answer": "hockey"
+        },
+        {
+            "questionNum": 20,
+            "question": "[koʊst]",
+            "answer": "coast"
+        },
+        {
+            "questionNum": 21,
+            "question": "[ðə]",
+            "answer": "the"
+        },
+        {
+            "questionNum": 22,
+            "question": "[ˈmʌ.ðɚ]",
+            "answer": "mother"
+        },
+        {
+            "questionNum": 23,
+            "question": "[ˈpeɪ.pɚ]",
+            "answer": "paper"
+        },
+        {
+            "questionNum": 24,
+            "question": "[ˈtrɛ.ʒɚ]",
+            "answer": "treasure"
+        },
+        {
+            "questionNum": 25,
+            "question": "[dəˈvɛ.lə.pɚ]",
+            "answer": "developer"
+        },
+        {
+            "questionNum": 26,
+            "question": "[ˈsɔft.wɛr]",
+            "answer": "software"
+        },
+        {
+            "questionNum": 27,
+            "question": "[brɪdʒ]",
+            "answer": "bridge"
+        },
+        {
+            "questionNum": 28,
+            "question": "[brið]",
+            "answer": "breathe"
+        },
+        {
+            "questionNum": 29,
+            "question": "[eksˈkjuz]",
+            "answer": "excuse"
+        },
+        {
+            "questionNum": 30,
+            "question": "[oʊˈʃən]",
+            "answer": "ocean"
+        },
+        {
+            "questionNum": 31,
+            "question": "[ɑkˈtoʊ.bɚ]",
+            "answer": "October"
+        },
+        {
+            "questionNum": 32,
+            "question": "[ˈneɪ.ʃən]",
+            "answer": "nation"
+        },
+        {
+            "questionNum": 33,
+            "question": "[ˈlæf.tɚ]",
+            "answer": "laughter"
+        },
+        {
+            "questionNum": 34,
+            "question": "[ˈdɪ.dʒə.təl]",
+            "answer": "digital"
+        },
+        {
+            "questionNum": 35,
+            "question": "[ˈkɑ.mə.dɪ]",
+            "answer": "comedy"
+        },
+        {
+            "questionNum": 36,
+            "question": "[ˈtʃɔɪ.səz]",
+            "answer": "choices"
+        },
+        {
+            "questionNum": 37,
+            "question": "[ˈdʒʌs.tə.faɪ]",
+            "answer": "justify"
+        },
+        {
+            "questionNum": 38,
+            "question": "[ˈtraɪ.əmf]",
+            "answer": "triumph"
+        },
+        {
+            "questionNum": 39,
+            "question": "[kənˈgræ.tjuˌleɪ.ʃənz]",
+            "answer": "congratulations"
+        },
+        {
+            "questionNum": 40,
+            "question": "[aɪ pi eɪ]",
+            "answer": "IPA"
         }
     ]
 }
