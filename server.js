@@ -20,7 +20,7 @@ const app = express();
 
 app.use(morgan('common'));
 
-app.use(cors());
+app.use(cors({origin: CLIENT_ORIGIN}));
 
 app.use(express.json());
 
