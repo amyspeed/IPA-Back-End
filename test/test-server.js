@@ -198,6 +198,34 @@ describe('Protect levels endpoint', function() {
                             );
                         });
             });
-        })
+            
+        });
+
+        it(`Should update user's scores with PUT by ID`, function() {
+            const newScores = {
+                level1: 100,
+                totalScore: 100
+            };
+
+            return User
+                .findOne()
+                .then(function(user) {
+                    newScores.id = user._id;
+
+                    return chai 
+                        .request(app)
+                        .put(`/api/users/scores/${user._id}`)
+                        .send(newScores)
+                        .set('Authorization', `Bearer ${authToken}`);
+                })
+                .then(function(res) {
+                    expect(res).to.have.status(204);
+                    return User.findById(newScores.id);
+                })
+                .then(function(updatedUser) {
+                    expect(updatedUser.level1).to.equal(newScores.level1);
+                    expect(updatedUser.totalScore).to.equal(newScores.totalScore);
+                });
+        });
     });
 });
