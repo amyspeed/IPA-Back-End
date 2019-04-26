@@ -17,6 +17,10 @@ describe('Protect levels endpoint', function() {
     const password = 'testPassword';
     const firstName = 'testFirst';
     const lastName = 'testLast';
+    const level1 = '0';
+    const level2 = '0';
+    const level3 = '0';
+    const totalScore = '0';
 
     const level = 'testLevel';
     const instructions = 'testInstructions';
@@ -36,24 +40,21 @@ describe('Protect levels endpoint', function() {
                     username,
                     password,
                     firstName,
-                    lastName
+                    lastName,
+                    level1,
+                    level2,
+                    level3,
+                    totalScore
                 })
         );
     });
 
     beforeEach(function() {
-        return Level.create([
-            {
+        return Level.create({
                 level,
                 instructions,
                 questions,
-            },
-            {
-                level,
-                instructions,
-                questions,
-            }
-        ])
+            })
     });
 
     afterEach(function() {
@@ -79,7 +80,7 @@ describe('Protect levels endpoint', function() {
         });
     });
 
-    describe('/api/levels/*', function() {
+    describe('/api/levels/* AND /api/users/scores/*', function() {
 
         const authToken = jwt.sign(
             {
@@ -152,5 +153,51 @@ describe('Protect levels endpoint', function() {
                         });
                 });
         });
+
+        it(`should GET all users' scores`, function() {
+            return chai
+                .request(app)
+                .get('/api/users/scores')
+                .set('Authorization', `Bearer ${authToken}`)
+                .then(function(res) {
+                    expect(res).to.have.status(200);
+                    expect(res).to.be.json;
+                    expect(res.body).to.be.an('array');
+                    res.body.forEach(function(user) {
+                        expect(user).to.be.an('object');
+                        expect(user).to.contain.keys(
+                            'username',
+                            'level1',
+                            'level2',
+                            'totalScore'
+                        );
+                    });
+                });
+        });
+
+        it(`should GET one user's scores by ID`, function() {
+            return User
+                .findOne()
+                .then(function(user) {
+                    let id = user._id;
+
+                    return chai 
+                        .request(app)
+                        .get(`/api/users/scores/${id}`)
+                        .set('Authorization', `Bearer ${authToken}`)
+                        .then(function(res) {
+                            expect(res).to.have.status(200);
+                            expect(res).to.be.json;
+                            expect(res.body).to.be.an('object');
+                            expect(res.body).to.contain.keys(
+                                'username',
+                                'level1',
+                                'level2',
+                                'level3',
+                                'totalScore'
+                            );
+                        });
+            });
+        })
     });
 });
