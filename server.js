@@ -33,6 +33,10 @@ app.use(function (req, res, next) {
 passport.use(localStrategy);
 passport.use(jwtStrategy);
 
+app.get('/api', (req, res) => {
+    res.json({ok: true});
+});
+
 app.use('/api/users', usersRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/levels', levelRouter);
@@ -40,8 +44,6 @@ app.use('/api/levels', levelRouter);
 app.use('*', function (req, res) {
     res.status(404).json({ message: `Not Found` });
 });
-
-
 
 let server;
 
