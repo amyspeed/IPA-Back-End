@@ -10,7 +10,7 @@ const QuestionSchema = mongoose.Schema({
 });
 
 const LevelSchema = mongoose.Schema({
-    quizName: String,
+    level: String,
     instructions: String,
     questions: [QuestionSchema]
 });
