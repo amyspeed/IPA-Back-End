@@ -13,6 +13,8 @@ const { router: authRouter, localStrategy, jwtStrategy } = require('./auth');
 const { router: levelRouter } = require('./levels');
 
 mongoose.Promise = global.Promise;
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useUnifiedTopology', true);
 
 const { DATABASE_URL, PORT } = require('./config');
 
