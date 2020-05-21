@@ -6,7 +6,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
 const passport = require('passport');
-// const cors = require('cors');
+const cors = require('cors');
 
 const { router: usersRouter } = require('./users');
 const { router: authRouter, localStrategy, jwtStrategy } = require('./auth');
@@ -22,12 +22,12 @@ const app = express();
 
 app.use(morgan('common'));
 
-// app.use(cors());
+app.use(cors());
 
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    next();
-});
+// app.use((req, res, next) => {
+//   res.header('Access-Control-Allow-Origin', '*');
+//   next();
+// });
 
 app.use(express.json());
 
